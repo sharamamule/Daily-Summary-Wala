@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Summary Sheet - Hyderabad Wala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="hyderabadwala-logo.png" alt="Hyderabad Wala Logo" width="300">
+    </div>
+    <h1>Daily Summary Sheet</h1>
+    <h2>Hyderabad Wala - House of Biryani</h2>
+    <form action="https://script.google.com/macros/s/AKfycbx3QCnKjVN4fPXY3Q1moxTMdha2Xe9m-VNj6FeuQhbHtzIZZmKBre9sYaWBqhd3uSKiKQ/exec " method="post">
+        <div class="section">
+            <div class="section-header">Purchases</div>
+            <table>
+                <tr>
+                    <th>Denomination</th>
+                    <th>Count</th>
+                    <th>Total Value</th>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td><input type="number" name="50_count"></td>
+                    <td><input type="number" name="50_total"></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td><input type="number" name="20_count"></td>
+                    <td><input type="number" name="20_total"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><input type="number" name="10_count"></td>
+                    <td><input type="number" name="10_total"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><input type="number" name="5_count"></td>
+                    <td><input type="number" name="5_total"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="number" name="2_count"></td>
+                    <td><input type="number" name="2_total"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="number" name="1_count"></td>
+                    <td><input type="number" name="1_total"></td>
+                </tr>
+                <tr>
+                    <td>50p</td>
+                    <td><input type="number" name="50p_count"></td>
+                    <td><input type="number" name="50p_total"></td>
+                </tr>
+                <tr>
+                    <td>20p</td>
+                    <td><input type="number" name="20p_count"></td>
+                    <td><input type="number" name="20p_total"></td>
+                </tr>
+                <tr>
+                    <td>Brons</td>
+                    <td><input type="number" name="brons_count"></td>
+                    <td><input type="number" name="brons_total"></td>
+                </tr>
+                <tr>
+                    <td>Safe</td>
+                    <td><input type="number" name="safe_count"></td>
+                    <td><input type="number" name="safe_total"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <label for="subtotal">Sub Total:</label>
+            <input type="number" name="subtotal" id="subtotal"><br><br>
+
+            <label for="opening">Opening (Minus):</label>
+            <input type="number" name="opening" id="opening"><br><br>
+
+            <label for="total_a">Total (A):</label>
+            <input type="number" name="total_a" id="total_a">
+        </div>
+
+        <div class="section">
+            <div class="section-header">Expenses</div>
+            <label for="expenses_b">Total Expenses (B):</label>
+            <input type="number" name="expenses_b" id="expenses_b"><br><br>
+
+            <label for="info">Any Other Information:</label><br>
+            <textarea name="info" id="info" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="section">
+            <div class="section-header">Sales</div>
+            <label for="card_c">Card (C):</label>
+            <input type="number" name="card_c" id="card_c"><br><br>
+
+            <label for="actual_sale">Actual Sale (A + B + C):</label>
+            <input type="number" name="actual_sale" id="actual_sale"><br><br>
+
+            <label for="z_sale">Z-Sale (POS Sales Amount):</label>
+            <input type="number" name="z_sale" id="z_sale">
+        </div>
+
+        <div class="section">
+            <div class="section-header">Online Sales</div>
+            <table>
+                <tr>
+                    <th>Platform</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Just Eat</td>
+                    <td><input type="number" name="just_eat"></td>
+                </tr>
+                <tr>
+                    <td>Deliveroo</td>
+                    <td><input type="number" name="deliveroo"></td>
+                </tr>
+                <tr>
+                    <td>Uber Eats</td>
+                    <td><input type="number" name="uber_eats"></td>
+                </tr>
+                <tr>
+                    <td>Total Online</td>
+                    <td><input type="number" name="total_online"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <label for="difference">Difference:</label>
+            <input type="number" name="difference" id="difference"><br><br>
+
+            <label for="cash_management">Cash to Management:</label>
+            <input type="number" name="cash_management" id="cash_management"><br><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
